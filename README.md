@@ -1,6 +1,6 @@
-# VaaniBI — Voice-powered Data Intelligence
+# VaaniDI — Voice-powered Data Intelligence
 
-VaaniBI is an MVP web app for asking questions about uploaded CSV/Excel data. It uses:
+VaaniDI is an MVP web app for asking questions about uploaded CSV/Excel data. It uses:
 - **Gnani Prisma** through the `gnani/gnani` Transformers adapter (and `gnani-vachana` SDK) for speech-to-text.
 - **Gnani Timbre** through the same adapter for text-to-speech.
 - Pandas for actual calculations (the app never executes arbitrary LLM-generated Python/SQL).
