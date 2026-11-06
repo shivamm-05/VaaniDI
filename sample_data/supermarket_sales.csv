@@ -1,0 +1,151 @@
+Invoice ID,Branch,City,Customer type,Gender,Product line,Unit price,Quantity,Tax 5%,Total,Date,Time,Payment,cogs,gross margin percentage,gross income,Rating
+INV-2026-1000,Branch C,Bengaluru,Normal,Male,Health and beauty,97.18,4,19.44,408.16,2026-03-31,19:11,Ewallet,388.72,4.761905,19.44,6.5
+INV-2026-1001,Branch A,Mumbai,Member,Female,Sports and travel,71.92,8,28.77,604.13,2026-01-14,20:35,Ewallet,575.36,4.761905,28.77,9.2
+INV-2026-1002,Branch C,Bengaluru,Normal,Male,Home and lifestyle,85.33,5,21.33,447.98,2026-03-05,12:04,Cash,426.65,4.761905,21.33,6.5
+INV-2026-1003,Branch C,Bengaluru,Normal,Female,Home and lifestyle,88.02,2,8.8,184.84,2026-02-07,16:36,Credit card,176.04,4.761905,8.8,6.7
+INV-2026-1004,Branch A,Mumbai,Member,Male,Food and beverages,85.46,6,25.64,538.4,2026-02-06,16:41,Credit card,512.76,4.761905,25.64,9.8
+INV-2026-1005,Branch A,Mumbai,Member,Male,Home and lifestyle,48.35,5,12.09,253.84,2026-01-11,09:27,UPI,241.75,4.761905,12.09,4.0
+INV-2026-1006,Branch C,Bengaluru,Normal,Male,Health and beauty,30.03,2,3.0,63.06,2026-03-18,18:08,Cash,60.06,4.761905,3.0,5.1
+INV-2026-1007,Branch B,Delhi,Member,Female,Home and lifestyle,45.7,3,6.86,143.96,2026-01-03,14:50,UPI,137.1,4.761905,6.86,6.3
+INV-2026-1008,Branch C,Bengaluru,Normal,Male,Food and beverages,90.27,9,40.62,853.05,2026-02-02,16:40,Credit card,812.43,4.761905,40.62,9.5
+INV-2026-1009,Branch C,Bengaluru,Member,Male,Food and beverages,23.19,7,8.12,170.45,2026-01-06,14:10,Cash,162.33,4.761905,8.12,4.4
+INV-2026-1010,Branch C,Bengaluru,Member,Male,Sports and travel,56.2,7,19.67,413.07,2026-02-19,15:00,Ewallet,393.4,4.761905,19.67,4.1
+INV-2026-1011,Branch C,Bengaluru,Normal,Male,Health and beauty,30.99,6,9.3,195.24,2026-01-10,13:20,Cash,185.94,4.761905,9.3,4.3
+INV-2026-1012,Branch A,Mumbai,Member,Female,Fashion accessories,62.32,8,24.93,523.49,2026-01-05,18:45,Ewallet,498.56,4.761905,24.93,4.5
+INV-2026-1013,Branch C,Bengaluru,Member,Male,Fashion accessories,87.68,4,17.54,368.26,2026-01-23,12:53,Ewallet,350.72,4.761905,17.54,4.2
+INV-2026-1014,Branch B,Delhi,Normal,Female,Home and lifestyle,89.23,8,35.69,749.53,2026-01-10,15:56,Cash,713.84,4.761905,35.69,6.8
+INV-2026-1015,Branch A,Mumbai,Normal,Female,Sports and travel,31.3,4,6.26,131.46,2026-02-13,09:53,Ewallet,125.2,4.761905,6.26,7.4
+INV-2026-1016,Branch B,Delhi,Member,Female,Electronic accessories,91.69,8,36.68,770.2,2026-01-02,15:50,UPI,733.52,4.761905,36.68,5.6
+INV-2026-1017,Branch B,Delhi,Normal,Female,Home and lifestyle,63.27,9,28.47,597.9,2026-01-13,16:14,Credit card,569.43,4.761905,28.47,6.3
+INV-2026-1018,Branch B,Delhi,Normal,Female,Sports and travel,41.52,3,6.23,130.79,2026-02-09,13:46,Ewallet,124.56,4.761905,6.23,4.5
+INV-2026-1019,Branch B,Delhi,Normal,Female,Health and beauty,73.74,3,11.06,232.28,2026-01-02,17:52,UPI,221.22,4.761905,11.06,6.0
+INV-2026-1020,Branch A,Mumbai,Member,Male,Health and beauty,53.35,2,5.34,112.04,2026-03-25,17:09,Ewallet,106.7,4.761905,5.34,7.1
+INV-2026-1021,Branch A,Mumbai,Normal,Female,Health and beauty,44.02,10,22.01,462.21,2026-03-06,12:56,Credit card,440.2,4.761905,22.01,8.3
+INV-2026-1022,Branch B,Delhi,Normal,Female,Health and beauty,73.46,3,11.02,231.4,2026-03-04,13:25,UPI,220.38,4.761905,11.02,4.0
+INV-2026-1023,Branch B,Delhi,Normal,Female,Health and beauty,32.39,3,4.86,102.03,2026-03-14,17:34,Credit card,97.17,4.761905,4.86,6.8
+INV-2026-1024,Branch A,Mumbai,Normal,Male,Sports and travel,39.72,5,9.93,208.53,2026-01-17,12:24,Credit card,198.6,4.761905,9.93,5.8
+INV-2026-1025,Branch A,Mumbai,Member,Male,Sports and travel,49.1,5,12.28,257.78,2026-01-09,18:10,UPI,245.5,4.761905,12.28,9.0
+INV-2026-1026,Branch A,Mumbai,Member,Female,Food and beverages,32.83,2,3.28,68.94,2026-03-16,14:01,UPI,65.66,4.761905,3.28,8.2
+INV-2026-1027,Branch C,Bengaluru,Normal,Male,Fashion accessories,46.47,10,23.24,487.94,2026-01-15,15:17,UPI,464.7,4.761905,23.24,7.5
+INV-2026-1028,Branch C,Bengaluru,Normal,Female,Health and beauty,61.43,6,18.43,387.01,2026-01-24,19:33,Cash,368.58,4.761905,18.43,5.6
+INV-2026-1029,Branch C,Bengaluru,Normal,Female,Electronic accessories,76.69,5,19.17,402.62,2026-02-07,19:16,UPI,383.45,4.761905,19.17,9.4
+INV-2026-1030,Branch B,Delhi,Member,Male,Sports and travel,79.05,6,23.72,498.02,2026-02-04,19:58,UPI,474.3,4.761905,23.72,4.3
+INV-2026-1031,Branch C,Bengaluru,Normal,Female,Electronic accessories,84.05,1,4.2,88.25,2026-02-18,20:58,UPI,84.05,4.761905,4.2,4.6
+INV-2026-1032,Branch B,Delhi,Normal,Male,Electronic accessories,76.98,5,19.25,404.15,2026-03-10,11:53,UPI,384.9,4.761905,19.25,6.3
+INV-2026-1033,Branch B,Delhi,Normal,Male,Electronic accessories,71.29,9,32.08,673.69,2026-03-03,16:24,Ewallet,641.61,4.761905,32.08,4.7
+INV-2026-1034,Branch C,Bengaluru,Member,Female,Food and beverages,31.38,10,15.69,329.49,2026-03-01,15:51,Cash,313.8,4.761905,15.69,9.6
+INV-2026-1035,Branch B,Delhi,Normal,Female,Sports and travel,46.02,2,4.6,96.64,2026-02-19,14:52,Credit card,92.04,4.761905,4.6,8.7
+INV-2026-1036,Branch C,Bengaluru,Member,Male,Electronic accessories,52.99,1,2.65,55.64,2026-03-19,16:32,UPI,52.99,4.761905,2.65,5.5
+INV-2026-1037,Branch C,Bengaluru,Member,Female,Health and beauty,17.46,10,8.73,183.33,2026-03-16,09:28,Ewallet,174.6,4.761905,8.73,7.5
+INV-2026-1038,Branch A,Mumbai,Normal,Female,Home and lifestyle,57.55,9,25.9,543.85,2026-01-09,19:21,Ewallet,517.95,4.761905,25.9,9.8
+INV-2026-1039,Branch C,Bengaluru,Normal,Female,Electronic accessories,49.27,10,24.64,517.34,2026-02-03,18:27,Ewallet,492.7,4.761905,24.64,9.2
+INV-2026-1040,Branch A,Mumbai,Normal,Male,Food and beverages,82.19,9,36.99,776.7,2026-03-17,10:20,Credit card,739.71,4.761905,36.99,7.5
+INV-2026-1041,Branch C,Bengaluru,Member,Male,Sports and travel,98.01,9,44.1,926.19,2026-02-04,09:06,UPI,882.09,4.761905,44.1,9.3
+INV-2026-1042,Branch C,Bengaluru,Normal,Female,Food and beverages,60.04,6,18.01,378.25,2026-01-01,09:19,Cash,360.24,4.761905,18.01,9.8
+INV-2026-1043,Branch A,Mumbai,Normal,Male,Electronic accessories,39.04,8,15.62,327.94,2026-02-09,17:48,Cash,312.32,4.761905,15.62,8.4
+INV-2026-1044,Branch A,Mumbai,Normal,Male,Sports and travel,13.91,1,0.7,14.61,2026-03-05,12:53,Ewallet,13.91,4.761905,0.7,4.4
+INV-2026-1045,Branch C,Bengaluru,Member,Male,Home and lifestyle,93.22,10,46.61,978.81,2026-01-22,14:27,Credit card,932.2,4.761905,46.61,6.4
+INV-2026-1046,Branch B,Delhi,Member,Male,Electronic accessories,92.72,4,18.54,389.42,2026-03-01,16:48,Credit card,370.88,4.761905,18.54,8.9
+INV-2026-1047,Branch A,Mumbai,Member,Male,Food and beverages,32.77,1,1.64,34.41,2026-03-05,15:00,Credit card,32.77,4.761905,1.64,5.4
+INV-2026-1048,Branch B,Delhi,Member,Female,Fashion accessories,72.59,8,29.04,609.76,2026-03-13,15:50,Cash,580.72,4.761905,29.04,8.9
+INV-2026-1049,Branch B,Delhi,Normal,Female,Health and beauty,16.79,1,0.84,17.63,2026-01-11,19:55,Ewallet,16.79,4.761905,0.84,4.7
+INV-2026-1050,Branch B,Delhi,Member,Female,Food and beverages,24.96,3,3.74,78.62,2026-01-14,11:31,UPI,74.88,4.761905,3.74,4.3
+INV-2026-1051,Branch A,Mumbai,Member,Male,Sports and travel,29.51,4,5.9,123.94,2026-03-01,09:44,Cash,118.04,4.761905,5.9,6.3
+INV-2026-1052,Branch B,Delhi,Normal,Male,Electronic accessories,36.5,8,14.6,306.6,2026-01-30,16:18,Ewallet,292.0,4.761905,14.6,4.2
+INV-2026-1053,Branch A,Mumbai,Normal,Female,Health and beauty,99.62,6,29.89,627.61,2026-02-04,10:00,Ewallet,597.72,4.761905,29.89,9.6
+INV-2026-1054,Branch B,Delhi,Member,Male,Electronic accessories,72.72,10,36.36,763.56,2026-03-26,11:46,UPI,727.2,4.761905,36.36,8.9
+INV-2026-1055,Branch C,Bengaluru,Member,Female,Sports and travel,44.58,7,15.6,327.66,2026-02-06,10:01,UPI,312.06,4.761905,15.6,8.7
+INV-2026-1056,Branch C,Bengaluru,Normal,Female,Electronic accessories,76.34,8,30.54,641.26,2026-01-05,14:27,UPI,610.72,4.761905,30.54,7.7
+INV-2026-1057,Branch A,Mumbai,Member,Female,Fashion accessories,92.37,2,9.24,193.98,2026-03-24,09:49,Credit card,184.74,4.761905,9.24,5.3
+INV-2026-1058,Branch C,Bengaluru,Member,Male,Health and beauty,96.28,10,48.14,1010.94,2026-03-19,14:50,UPI,962.8,4.761905,48.14,7.1
+INV-2026-1059,Branch C,Bengaluru,Member,Male,Health and beauty,15.21,8,6.08,127.76,2026-01-26,12:00,Ewallet,121.68,4.761905,6.08,7.5
+INV-2026-1060,Branch B,Delhi,Member,Female,Sports and travel,45.51,3,6.83,143.36,2026-03-03,16:28,UPI,136.53,4.761905,6.83,7.1
+INV-2026-1061,Branch A,Mumbai,Normal,Female,Fashion accessories,19.61,7,6.86,144.13,2026-01-04,15:38,Ewallet,137.27,4.761905,6.86,5.5
+INV-2026-1062,Branch B,Delhi,Member,Female,Food and beverages,40.21,3,6.03,126.66,2026-03-30,11:31,Cash,120.63,4.761905,6.03,7.0
+INV-2026-1063,Branch B,Delhi,Normal,Female,Electronic accessories,25.27,7,8.84,185.73,2026-02-11,18:09,Credit card,176.89,4.761905,8.84,6.9
+INV-2026-1064,Branch B,Delhi,Normal,Male,Home and lifestyle,68.22,2,6.82,143.26,2026-03-30,11:45,Cash,136.44,4.761905,6.82,9.9
+INV-2026-1065,Branch B,Delhi,Member,Male,Electronic accessories,44.94,10,22.47,471.87,2026-01-18,10:59,Cash,449.4,4.761905,22.47,9.3
+INV-2026-1066,Branch B,Delhi,Member,Female,Electronic accessories,30.65,6,9.19,193.09,2026-02-09,09:22,Ewallet,183.9,4.761905,9.19,6.7
+INV-2026-1067,Branch B,Delhi,Member,Female,Food and beverages,33.93,3,5.09,106.88,2026-03-13,15:27,Cash,101.79,4.761905,5.09,7.7
+INV-2026-1068,Branch B,Delhi,Normal,Male,Electronic accessories,42.43,3,6.36,133.65,2026-02-08,10:06,Ewallet,127.29,4.761905,6.36,8.4
+INV-2026-1069,Branch A,Mumbai,Member,Male,Fashion accessories,33.4,9,15.03,315.63,2026-01-14,16:00,UPI,300.6,4.761905,15.03,4.2
+INV-2026-1070,Branch C,Bengaluru,Member,Female,Fashion accessories,50.79,7,17.78,373.31,2026-02-01,17:54,UPI,355.53,4.761905,17.78,9.3
+INV-2026-1071,Branch B,Delhi,Normal,Female,Health and beauty,12.91,5,3.23,67.78,2026-02-20,11:23,Ewallet,64.55,4.761905,3.23,9.1
+INV-2026-1072,Branch B,Delhi,Member,Female,Sports and travel,35.18,10,17.59,369.39,2026-02-07,15:58,UPI,351.8,4.761905,17.59,6.7
+INV-2026-1073,Branch B,Delhi,Member,Male,Home and lifestyle,47.01,7,16.45,345.52,2026-01-23,16:53,Credit card,329.07,4.761905,16.45,6.3
+INV-2026-1074,Branch B,Delhi,Member,Male,Electronic accessories,64.25,9,28.91,607.16,2026-03-04,17:46,Cash,578.25,4.761905,28.91,5.6
+INV-2026-1075,Branch B,Delhi,Member,Male,Electronic accessories,34.39,1,1.72,36.11,2026-01-15,13:02,Credit card,34.39,4.761905,1.72,6.8
+INV-2026-1076,Branch B,Delhi,Normal,Female,Food and beverages,21.99,7,7.7,161.63,2026-01-25,11:32,Cash,153.93,4.761905,7.7,4.3
+INV-2026-1077,Branch C,Bengaluru,Member,Female,Sports and travel,16.86,6,5.06,106.22,2026-01-17,20:46,UPI,101.16,4.761905,5.06,9.0
+INV-2026-1078,Branch C,Bengaluru,Normal,Male,Fashion accessories,94.65,10,47.32,993.82,2026-03-07,16:33,Credit card,946.5,4.761905,47.32,4.2
+INV-2026-1079,Branch B,Delhi,Member,Male,Home and lifestyle,47.5,9,21.38,448.88,2026-03-19,11:31,UPI,427.5,4.761905,21.38,5.9
+INV-2026-1080,Branch C,Bengaluru,Normal,Female,Health and beauty,62.3,1,3.12,65.42,2026-02-22,16:13,Cash,62.3,4.761905,3.12,9.5
+INV-2026-1081,Branch A,Mumbai,Member,Male,Fashion accessories,92.73,4,18.55,389.47,2026-02-20,16:45,Ewallet,370.92,4.761905,18.55,8.3
+INV-2026-1082,Branch B,Delhi,Member,Male,Sports and travel,17.45,9,7.85,164.9,2026-02-08,19:15,Ewallet,157.05,4.761905,7.85,5.7
+INV-2026-1083,Branch A,Mumbai,Normal,Female,Health and beauty,88.9,4,17.78,373.38,2026-02-20,12:51,Credit card,355.6,4.761905,17.78,5.5
+INV-2026-1084,Branch A,Mumbai,Normal,Male,Food and beverages,59.64,10,29.82,626.22,2026-03-11,13:53,UPI,596.4,4.761905,29.82,4.0
+INV-2026-1085,Branch B,Delhi,Normal,Female,Food and beverages,24.84,3,3.73,78.25,2026-01-06,13:13,UPI,74.52,4.761905,3.73,8.1
+INV-2026-1086,Branch C,Bengaluru,Member,Female,Electronic accessories,47.01,9,21.15,444.24,2026-03-08,15:47,Credit card,423.09,4.761905,21.15,4.3
+INV-2026-1087,Branch A,Mumbai,Member,Female,Sports and travel,79.98,2,8.0,167.96,2026-01-07,10:06,Ewallet,159.96,4.761905,8.0,7.1
+INV-2026-1088,Branch B,Delhi,Member,Female,Home and lifestyle,53.23,4,10.65,223.57,2026-02-20,18:06,Cash,212.92,4.761905,10.65,9.7
+INV-2026-1089,Branch A,Mumbai,Normal,Female,Health and beauty,98.68,6,29.6,621.68,2026-03-13,09:22,Credit card,592.08,4.761905,29.6,4.6
+INV-2026-1090,Branch A,Mumbai,Member,Female,Fashion accessories,43.91,2,4.39,92.21,2026-02-11,13:18,Cash,87.82,4.761905,4.39,9.3
+INV-2026-1091,Branch A,Mumbai,Normal,Female,Sports and travel,77.46,8,30.98,650.66,2026-03-05,11:35,Ewallet,619.68,4.761905,30.98,9.8
+INV-2026-1092,Branch A,Mumbai,Member,Male,Sports and travel,45.37,8,18.15,381.11,2026-01-15,20:17,UPI,362.96,4.761905,18.15,4.4
+INV-2026-1093,Branch C,Bengaluru,Normal,Female,Food and beverages,84.62,1,4.23,88.85,2026-01-29,10:00,Ewallet,84.62,4.761905,4.23,9.2
+INV-2026-1094,Branch A,Mumbai,Member,Female,Electronic accessories,61.22,3,9.18,192.84,2026-02-02,13:19,Credit card,183.66,4.761905,9.18,7.0
+INV-2026-1095,Branch A,Mumbai,Normal,Male,Electronic accessories,15.72,10,7.86,165.06,2026-01-27,19:41,UPI,157.2,4.761905,7.86,9.3
+INV-2026-1096,Branch A,Mumbai,Member,Male,Health and beauty,13.31,9,5.99,125.78,2026-02-05,10:02,Credit card,119.79,4.761905,5.99,7.4
+INV-2026-1097,Branch C,Bengaluru,Member,Male,Food and beverages,22.05,5,5.51,115.76,2026-01-29,15:54,Credit card,110.25,4.761905,5.51,7.9
+INV-2026-1098,Branch A,Mumbai,Normal,Female,Sports and travel,11.23,6,3.37,70.75,2026-02-07,20:19,Ewallet,67.38,4.761905,3.37,7.2
+INV-2026-1099,Branch A,Mumbai,Member,Male,Home and lifestyle,16.78,4,3.36,70.48,2026-02-26,13:36,Credit card,67.12,4.761905,3.36,9.1
+INV-2026-1100,Branch C,Bengaluru,Member,Female,Food and beverages,72.25,10,36.12,758.62,2026-01-27,14:29,Ewallet,722.5,4.761905,36.12,8.3
+INV-2026-1101,Branch C,Bengaluru,Normal,Female,Health and beauty,58.09,2,5.81,121.99,2026-02-24,17:33,UPI,116.18,4.761905,5.81,7.1
+INV-2026-1102,Branch C,Bengaluru,Normal,Female,Health and beauty,77.49,8,31.0,650.92,2026-02-02,13:43,Ewallet,619.92,4.761905,31.0,9.1
+INV-2026-1103,Branch A,Mumbai,Member,Female,Food and beverages,92.18,6,27.65,580.73,2026-03-09,11:51,UPI,553.08,4.761905,27.65,5.4
+INV-2026-1104,Branch C,Bengaluru,Member,Male,Health and beauty,62.66,5,15.66,328.96,2026-03-27,18:21,Ewallet,313.3,4.761905,15.66,4.9
+INV-2026-1105,Branch C,Bengaluru,Member,Male,Food and beverages,75.35,9,33.91,712.06,2026-03-07,20:23,Cash,678.15,4.761905,33.91,4.9
+INV-2026-1106,Branch A,Mumbai,Normal,Female,Fashion accessories,78.14,1,3.91,82.05,2026-01-10,09:09,Cash,78.14,4.761905,3.91,6.0
+INV-2026-1107,Branch C,Bengaluru,Member,Female,Food and beverages,44.01,5,11.0,231.05,2026-01-05,16:58,Credit card,220.05,4.761905,11.0,5.4
+INV-2026-1108,Branch A,Mumbai,Member,Female,Food and beverages,31.7,6,9.51,199.71,2026-03-15,15:31,Ewallet,190.2,4.761905,9.51,9.5
+INV-2026-1109,Branch B,Delhi,Member,Male,Health and beauty,28.45,5,7.11,149.36,2026-02-07,09:49,Ewallet,142.25,4.761905,7.11,4.6
+INV-2026-1110,Branch C,Bengaluru,Member,Female,Health and beauty,32.63,6,9.79,205.57,2026-01-13,11:16,UPI,195.78,4.761905,9.79,8.1
+INV-2026-1111,Branch B,Delhi,Normal,Female,Electronic accessories,34.73,6,10.42,218.8,2026-01-31,17:39,Credit card,208.38,4.761905,10.42,5.1
+INV-2026-1112,Branch A,Mumbai,Member,Male,Electronic accessories,28.65,7,10.03,210.58,2026-02-16,10:44,Ewallet,200.55,4.761905,10.03,9.2
+INV-2026-1113,Branch C,Bengaluru,Normal,Male,Fashion accessories,89.04,4,17.81,373.97,2026-03-29,17:38,Credit card,356.16,4.761905,17.81,9.7
+INV-2026-1114,Branch A,Mumbai,Member,Female,Electronic accessories,78.13,8,31.25,656.29,2026-02-21,17:53,Cash,625.04,4.761905,31.25,6.7
+INV-2026-1115,Branch B,Delhi,Member,Male,Food and beverages,14.22,7,4.98,104.52,2026-02-25,14:42,Ewallet,99.54,4.761905,4.98,9.2
+INV-2026-1116,Branch A,Mumbai,Member,Male,Health and beauty,34.18,9,15.38,323.0,2026-01-15,12:25,Ewallet,307.62,4.761905,15.38,4.0
+INV-2026-1117,Branch C,Bengaluru,Member,Female,Electronic accessories,12.0,7,4.2,88.2,2026-01-29,18:28,Credit card,84.0,4.761905,4.2,8.8
+INV-2026-1118,Branch C,Bengaluru,Normal,Male,Electronic accessories,54.83,3,8.22,172.71,2026-01-08,10:22,Ewallet,164.49,4.761905,8.22,5.3
+INV-2026-1119,Branch B,Delhi,Normal,Female,Fashion accessories,52.86,3,7.93,166.51,2026-01-05,13:10,Credit card,158.58,4.761905,7.93,9.4
+INV-2026-1120,Branch A,Mumbai,Normal,Male,Sports and travel,84.82,8,33.93,712.49,2026-01-29,14:17,Ewallet,678.56,4.761905,33.93,4.0
+INV-2026-1121,Branch C,Bengaluru,Normal,Female,Fashion accessories,37.7,5,9.43,197.93,2026-02-16,13:41,UPI,188.5,4.761905,9.43,7.3
+INV-2026-1122,Branch B,Delhi,Member,Female,Food and beverages,83.47,4,16.69,350.57,2026-03-09,12:40,Credit card,333.88,4.761905,16.69,8.5
+INV-2026-1123,Branch C,Bengaluru,Normal,Female,Health and beauty,97.12,8,38.85,815.81,2026-03-17,14:33,Ewallet,776.96,4.761905,38.85,5.5
+INV-2026-1124,Branch C,Bengaluru,Member,Male,Fashion accessories,17.96,6,5.39,113.15,2026-02-14,09:36,Cash,107.76,4.761905,5.39,5.1
+INV-2026-1125,Branch A,Mumbai,Normal,Female,Electronic accessories,81.26,2,8.13,170.65,2026-01-02,17:37,Ewallet,162.52,4.761905,8.13,4.5
+INV-2026-1126,Branch C,Bengaluru,Member,Male,Health and beauty,63.1,4,12.62,265.02,2026-01-27,18:11,Cash,252.4,4.761905,12.62,5.9
+INV-2026-1127,Branch A,Mumbai,Member,Female,Health and beauty,53.2,4,10.64,223.44,2026-02-05,15:52,Cash,212.8,4.761905,10.64,7.3
+INV-2026-1128,Branch C,Bengaluru,Member,Female,Electronic accessories,47.85,6,14.36,301.46,2026-02-05,18:21,UPI,287.1,4.761905,14.36,4.7
+INV-2026-1129,Branch B,Delhi,Member,Male,Fashion accessories,80.62,6,24.19,507.91,2026-01-26,13:26,Credit card,483.72,4.761905,24.19,6.2
+INV-2026-1130,Branch C,Bengaluru,Member,Female,Electronic accessories,67.54,1,3.38,70.92,2026-02-12,17:30,Ewallet,67.54,4.761905,3.38,4.1
+INV-2026-1131,Branch A,Mumbai,Member,Female,Sports and travel,82.45,8,32.98,692.58,2026-01-27,14:26,UPI,659.6,4.761905,32.98,8.8
+INV-2026-1132,Branch A,Mumbai,Normal,Male,Health and beauty,91.28,6,27.38,575.06,2026-03-10,16:33,Ewallet,547.68,4.761905,27.38,4.8
+INV-2026-1133,Branch B,Delhi,Member,Female,Home and lifestyle,65.55,3,9.83,206.48,2026-01-20,20:44,Cash,196.65,4.761905,9.83,5.7
+INV-2026-1134,Branch C,Bengaluru,Member,Female,Home and lifestyle,98.24,9,44.21,928.37,2026-01-11,17:52,Credit card,884.16,4.761905,44.21,4.1
+INV-2026-1135,Branch C,Bengaluru,Normal,Female,Food and beverages,64.73,2,6.47,135.93,2026-03-15,15:09,Ewallet,129.46,4.761905,6.47,6.6
+INV-2026-1136,Branch B,Delhi,Normal,Female,Electronic accessories,67.3,8,26.92,565.32,2026-02-07,09:25,Ewallet,538.4,4.761905,26.92,9.0
+INV-2026-1137,Branch C,Bengaluru,Member,Male,Electronic accessories,59.93,10,29.96,629.26,2026-01-06,13:27,Cash,599.3,4.761905,29.96,6.3
+INV-2026-1138,Branch C,Bengaluru,Member,Male,Food and beverages,18.19,3,2.73,57.3,2026-03-13,18:45,Ewallet,54.57,4.761905,2.73,5.1
+INV-2026-1139,Branch A,Mumbai,Normal,Female,Food and beverages,75.38,5,18.84,395.74,2026-01-23,10:59,Ewallet,376.9,4.761905,18.84,8.4
+INV-2026-1140,Branch C,Bengaluru,Member,Male,Food and beverages,59.27,6,17.78,373.4,2026-02-16,14:42,Cash,355.62,4.761905,17.78,8.7
+INV-2026-1141,Branch C,Bengaluru,Normal,Female,Health and beauty,50.58,10,25.29,531.09,2026-03-31,09:50,UPI,505.8,4.761905,25.29,5.0
+INV-2026-1142,Branch B,Delhi,Normal,Male,Sports and travel,91.94,6,27.58,579.22,2026-02-15,13:35,Cash,551.64,4.761905,27.58,8.5
+INV-2026-1143,Branch B,Delhi,Member,Female,Electronic accessories,36.82,4,7.36,154.64,2026-01-12,11:25,UPI,147.28,4.761905,7.36,9.6
+INV-2026-1144,Branch A,Mumbai,Member,Female,Health and beauty,57.12,3,8.57,179.93,2026-03-31,13:10,Credit card,171.36,4.761905,8.57,5.0
+INV-2026-1145,Branch C,Bengaluru,Normal,Female,Food and beverages,72.79,4,14.56,305.72,2026-01-13,16:10,UPI,291.16,4.761905,14.56,8.5
+INV-2026-1146,Branch C,Bengaluru,Normal,Female,Electronic accessories,81.68,1,4.08,85.76,2026-03-03,12:48,UPI,81.68,4.761905,4.08,8.2
+INV-2026-1147,Branch C,Bengaluru,Normal,Female,Health and beauty,51.34,4,10.27,215.63,2026-03-23,19:38,Credit card,205.36,4.761905,10.27,6.8
+INV-2026-1148,Branch A,Mumbai,Normal,Female,Sports and travel,85.79,1,4.29,90.08,2026-03-30,16:34,UPI,85.79,4.761905,4.29,4.3
+INV-2026-1149,Branch A,Mumbai,Normal,Male,Health and beauty,79.2,1,3.96,83.16,2026-03-01,14:33,Cash,79.2,4.761905,3.96,4.4

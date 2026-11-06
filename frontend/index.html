@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VaaniBI — Voice-Powered Data Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <!-- Plotly CDN for interactive visualizations -->
+  <script src="https://cdn.plot.ly/plotly-2.29.1.min.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Navbar -->
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2v20M17 5v14M7 9v6M22 10v4M2 11v2"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="brand-title">Vaani<span>BI</span></h1>
+          <p class="brand-subtitle">Voice-Powered Data Intelligence</p>
+        </div>
+      </div>
+
+      <div class="header-badges">
+        <div class="engine-badge" id="badge-stt" title="Speech-to-Text Engine">
+          <span class="status-dot online"></span>
+          <span class="badge-label">Prisma STT</span>
+        </div>
+        <div class="engine-badge" id="badge-tts" title="Text-to-Speech Engine">
+          <span class="status-dot online"></span>
+          <span class="badge-label">Timbre TTS</span>
+        </div>
+        <div class="engine-badge active-dataset-badge" id="active-dataset-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+          </svg>
+          <span id="active-filename">No dataset loaded</span>
+        </div>
+        <a href="/api/download-zip" download="vaani-bi.zip" class="btn btn-secondary btn-sm" style="text-decoration: none;" title="Download complete project as a ZIP archive">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download ZIP
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="main-layout">
+      <!-- Left / Top: Dataset Profiler Card -->
+      <section class="card dataset-card">
+        <div class="card-header">
+          <div class="card-title-group">
+            <span class="step-num">1</span>
+            <div>
+              <h2 class="card-title">Dataset & Profile</h2>
+              <p class="card-desc">Upload a CSV or Excel spreadsheet to explore</p>
+            </div>
+          </div>
+          <button id="btn-load-sample" class="btn btn-secondary btn-sm" title="Load Supermarket Sales demo data">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Load Sample Dataset
+          </button>
+        </div>
+
+        <!-- Drag & Drop Zone -->
+        <div class="upload-dropzone" id="upload-zone">
+          <input type="file" id="file-input" accept=".csv, .xlsx, .xls" hidden />
+          <div class="dropzone-content">
+            <div class="upload-icon-circle">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+            </div>
+            <p class="upload-prompt"><strong>Click to upload</strong> or drag and drop</p>
+            <p class="upload-hint">Supports CSV, XLSX, XLS up to 20 MB</p>
+          </div>
+        </div>
+
+        <!-- Profile Metrics Grid -->
+        <div class="profile-metrics-grid" id="profile-grid" style="display: none;">
+          <div class="metric-box">
+            <span class="metric-label">Total Rows</span>
+            <span class="metric-value" id="prof-rows">—</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-label">Columns</span>
+            <span class="metric-value" id="prof-cols">—</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-label">Missing Values</span>
+            <span class="metric-value" id="prof-missing">—</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-label">Duplicates</span>
+            <span class="metric-value" id="prof-dupes">—</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-label">Memory Size</span>
+            <span class="metric-value" id="prof-memory">—</span>
+          </div>
+        </div>
+
+        <!-- Collapsible Preview Table -->
+        <div class="preview-container" id="preview-section" style="display: none;">
+          <div class="preview-header">
+            <span class="preview-title">Data Preview (First 10 Rows)</span>
+            <button id="toggle-preview-btn" class="btn-text">Show Table</button>
+          </div>
+          <div class="table-scroll" id="table-scroll" style="display: none;">
+            <table class="data-table" id="preview-table">
+              <thead id="preview-thead"></thead>
+              <tbody id="preview-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Dynamic Auto-Generated Questions for Uploaded File -->
+        <div class="suggested-questions-section" id="suggested-questions-section" style="display: none;">
+          <div class="suggested-header">
+            <div class="suggested-title-wrapper">
+              <span class="ai-sparkle">✨</span>
+              <div>
+                <h3 class="suggested-title">Auto-Generated Questions for this Dataset</h3>
+                <p class="suggested-subtitle">VaaniBI analyzed the uploaded columns and created these tailored questions to explore:</p>
+              </div>
+            </div>
+            <div class="lang-toggle-group">
+              <button type="button" class="lang-toggle-btn active" data-lang-filter="both">Both</button>
+              <button type="button" class="lang-toggle-btn" data-lang-filter="en">English</button>
+              <button type="button" class="lang-toggle-btn" data-lang-filter="hi">हिंदी</button>
+            </div>
+          </div>
+
+          <div class="generated-questions-grid" id="generated-questions-grid">
+            <!-- Dynamically populated from backend analysis of uploaded file -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Center: Conversational Voice & Text Intelligence -->
+      <section class="card query-card">
+        <div class="card-header">
+          <div class="card-title-group">
+            <span class="step-num">2</span>
+            <div>
+              <h2 class="card-title">Ask Questions (Voice or Text)</h2>
+              <p class="card-desc">Supported in Hindi and English with Gnani Prisma & Timbre</p>
+            </div>
+          </div>
+          <div class="voice-controls">
+            <div class="select-group">
+              <label for="language-select">Language:</label>
+              <select id="language-select" class="form-select">
+                <option value="hi-IN" selected>Hindi (हिंदी)</option>
+                <option value="en-IN">English (India)</option>
+                <option value="ta-IN">Tamil (தமிழ்)</option>
+                <option value="te-IN">Telugu (తెలుగు)</option>
+                <option value="kn-IN">Kannada (ಕನ್ನಡ)</option>
+                <option value="mr-IN">Marathi (मराठी)</option>
+                <option value="bn-IN">Bengali (বাংলা)</option>
+                <option value="gu-IN">Gujarati (ગુજરાતી)</option>
+              </select>
+            </div>
+            <div class="select-group">
+              <label for="voice-select">Voice:</label>
+              <select id="voice-select" class="form-select">
+                <option value="Nalini" selected>Nalini (Female)</option>
+                <option value="Pranav">Pranav (Male)</option>
+                <option value="Maya">Maya (Female)</option>
+                <option value="Amol">Amol (Male)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Voice Interaction Center -->
+        <div class="voice-hub">
+          <div class="mic-container">
+            <button id="btn-mic" class="mic-button" title="Click to speak">
+              <div class="mic-rings"></div>
+              <svg class="mic-svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                <line x1="12" y1="19" x2="12" y2="23"></line>
+                <line x1="8" y1="23" x2="16" y2="23"></line>
+              </svg>
+            </button>
+            <p id="mic-status-text" class="mic-status-text">Click microphone and ask a question</p>
+            <canvas id="audio-visualizer" class="audio-visualizer" width="280" height="40"></canvas>
+          </div>
+
+          <!-- Divider -->
+          <div class="or-divider">
+            <span>OR TYPE YOUR QUERY</span>
+          </div>
+
+          <!-- Text Input Form -->
+          <form id="text-query-form" class="query-input-bar">
+            <input
+              type="text"
+              id="query-input"
+              class="query-text-field"
+              placeholder="e.g. Which product has the highest sales? / शाखा के अनुसार बिक्री की तुलना करें"
+              autocomplete="off"
+            />
+            <button type="submit" id="btn-ask" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              Ask
+            </button>
+          </form>
+
+          <!-- Suggested Query Chips -->
+          <div class="suggestions-container">
+            <span class="suggestions-label">Try asking:</span>
+            <div class="suggestion-chips" id="suggestion-chips">
+              <button class="chip" data-q="Which product line has the highest sales?">Top Product Sales</button>
+              <button class="chip" data-q="शाखा के अनुसार बिक्री की तुलना करें" data-lang="hi-IN">शाखावार बिक्री (Hindi)</button>
+              <button class="chip" data-q="Show monthly sales trend">Monthly Sales Trend</button>
+              <button class="chip" data-q="What is the average unit price by category?">Avg Price by Category</button>
+              <button class="chip" data-q="How many rows are in the dataset?">Row Count</button>
+              <button class="chip" data-q="किस श्रेणी की बिक्री सबसे ज्यादा है?" data-lang="hi-IN">सबसे ज्यादा बिक्री (Hindi)</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom: Dynamic Results & Interactive Chart -->
+      <section class="card results-card" id="results-card" style="display: none;">
+        <div class="card-header">
+          <div class="card-title-group">
+            <span class="step-num">3</span>
+            <div>
+              <h2 class="card-title">Live Intelligence Insights</h2>
+              <p class="card-desc" id="execution-meta">Computed deterministically via Pandas</p>
+            </div>
+          </div>
+          <span class="intent-badge" id="intent-badge">HIGHEST</span>
+        </div>
+
+        <!-- Speech Transcription Box (if voice query) -->
+        <div class="transcript-box" id="transcript-container" style="display: none;">
+          <div class="transcript-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+            </svg>
+            Gnani Prisma Transcript:
+          </div>
+          <p class="transcript-text" id="transcript-text">—</p>
+        </div>
+
+        <!-- Spoken Answer & Audio Player Banner -->
+        <div class="answer-banner">
+          <div class="answer-content">
+            <span class="answer-label">VaaniBI Answer:</span>
+            <p class="answer-text" id="answer-text">—</p>
+          </div>
+          <div class="audio-player-wrapper" id="audio-player-wrapper" style="display: none;">
+            <audio id="tts-audio-element" controls preload="auto"></audio>
+            <span class="audio-badge">Spoken by Gnani Timbre</span>
+          </div>
+        </div>
+
+        <!-- Plotly Visualization Container -->
+        <div class="chart-container" id="chart-wrapper">
+          <div id="plotly-chart"></div>
+        </div>
+
+        <!-- Result Records Table -->
+        <div class="results-data-table-container" id="results-table-container">
+          <table class="data-table" id="results-table">
+            <thead id="results-thead"></thead>
+            <tbody id="results-tbody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>Powered by <strong>Gnani Prisma STT</strong> &bull; <strong>Gnani Timbre TTS</strong> &bull; <strong>Pandas Analytics</strong> &bull; <strong>Plotly</strong></p>
+      <p class="footer-sub">Safe determinism: No arbitrary SQL or Python code generation.</p>
+    </footer>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
